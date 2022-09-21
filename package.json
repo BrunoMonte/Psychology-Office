@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.ts",
-    "typeorm": "typeorm-ts-node-commonjs",
+    "typeorm": "ts-node-dev  node_modules/typeorm/cli.js",
     "build": ""
   },
   "repository": {
