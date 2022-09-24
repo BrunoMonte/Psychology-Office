@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.ts",
-    "typeorm": "ts-node-dev  node_modules/typeorm/cli.js",
-    "build": ""
+    "typeorm": "ts-node-dev node_modules/.bin/typeorm",
+    "build": "rm -rf ./dist && tsc"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/BrunoMonte/Psychology-Office#readme",
   "devDependencies": {
     "@types/module-alias": "^2.0.1",
+    "@types/node": "^18.7.19",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
